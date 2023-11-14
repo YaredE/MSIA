@@ -29,6 +29,13 @@ void printList(LL* head) {
     }
     printf("\n");
 }
+
+int isLittleEndian() {
+    int one = 1;
+    char *byte = (char *)&one;
+    return (*byte == 1);
+}
+
 void convertToBinary(int n) {
     // binary format
     int r = n;
